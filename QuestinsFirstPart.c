@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main(){
+// int main(){
     // Question 1
     // int a;
     // printf("Enter First side: ");
@@ -30,10 +30,30 @@ int main(){
     // int y=6;
     // printf("%d,%d",x,y);
     // printf("%d",y);
-    int a = 1892;
-    double b = 12.3786882983;
-    printf("%07.2lf\n",b);
-    printf("%06d",a);
-    
-    return 0;
+    // int a = 1892;
+//     double b = 12.3786882983;
+//     printf("%07.2lf\n",b);
+//     printf("%06d",a);
+//
+//     return 0;
+// }
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Enter number os rows: ");
+    scanf("%d",&a);
+    printf("\n");
+    printf("Enter number of columns: ");
+    scanf("%d",&6);
+    printf("\n");
+    for(int i=0;i<a;i++){
+        for (int j =0;j<b;j++){
+            printf("@");
+        }
+        printf("\n");
+
+    }
+
+
 }
