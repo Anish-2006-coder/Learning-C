@@ -5,7 +5,7 @@ int Addition(int a,int b){
 int Substracton(int a, int b){
     return a-b;
 }
-int Division(int a, int b){
+double Division(double a, double b){
     return a/b;
 }
 int Mulctiplication(int a, int b){
@@ -16,7 +16,8 @@ int main(){
     printf("you want to do calculation 1 for yes any other for no\n");
     scanf("%d",&k);
     while(k==1){
-    int a,b,j;
+    int a,b;
+    int j;
     printf("Enter first number: ");
     scanf("%d",&a);
     printf("Enter second number: ");
@@ -35,7 +36,12 @@ int main(){
         printf("%d\n",Substracton(a,b));
     }
     else if (j==3){
-        printf("%d\n",Division(a,b));
+        if (b==0){
+            printf("can't preform division with 0\n");
+        }
+        else{
+            printf("%.2f\n",Division((double)a,(double)b)); //type conversion.
+        }
     }
     else if(j==4){
         printf("%d\n",Mulctiplication(a,b));
