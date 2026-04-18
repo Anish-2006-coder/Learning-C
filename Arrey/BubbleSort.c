@@ -8,8 +8,16 @@ int main(){
         scanf("%d",&nums[i]);
     }
     for(int i=0;i<limit;i++){
-        printf("%d",nums[i]);
+        for(int j=i+1;j<limit;j++){
+            if (nums[i]>nums[j]){
+                int a=nums[j];
+                nums[j]=nums[i];
+                nums[i]=a;
+            }
+        }
     }
-    
+    for(int i=0;i<limit;i++){
+        printf("%d ",nums[i]);
+    }
 
 }
